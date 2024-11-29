@@ -1,0 +1,218 @@
+/* Tudo */
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+
+/* Body */
+body{
+    background-image: url(../img/fundo.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+
+
+/* Nav */
+nav {
+    background-color: #222222;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Inter, sans-serif;
+    
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #B1B1B1;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+  }
+  
+  li{
+    color: #B1B1B1;
+  }
+
+  a:hover {
+    color: rgb(255, 255, 255);
+  } 
+
+  .logo{
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .list1 { 
+    display: flex;
+    justify-content: flex-start;
+
+  }
+  
+  .list2 { 
+    display: flex;
+    margin-right: 10px;
+    margin-left: auto;
+  }
+
+  #bx {
+    color: #3562FF;
+  }
+
+
+  /* Carrossel */
+ .slider {
+	width: 860px;
+	margin: 4rem auto;
+}
+
+.slider-wrapper {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+.slide {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 2s linear;
+    border-radius: 10px;
+}
+
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+
+
+/* Jogos */
+.GP {
+    display: flex;
+    /* margin-left: 30px; */
+    margin-top: 500px;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  @media (max-width: 1100px) {
+    .container {
+        align-items: center;
+    }
+  }
+  
+  .titulo {
+    margin-left: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 42px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    color: white;
+    margin-right: 65px;
+  }
+  
+  
+  .gallery-item:hover {
+    transform: scale(1.01);
+  }
+
+  .gallery-item img{
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .gallery-item{
+    text-align: center;
+    font-variant: small-caps;
+  }
+  
+  
+  .container{
+    margin: auto;
+    margin-top: -450px;
+  }
+
+  footer{
+    height: auto;
+    width: auto;
+    background-color: #222222;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+  }
+
+  footer img{
+    width: 12rem;
+  }
+
+  .center{
+    text-align: center;
+    margin: auto;
+    font-variant: small-caps;
+  }
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222222;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #B1B1B1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #222222;
+}

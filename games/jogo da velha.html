@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha | Play Land</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/jogodavelha.css">
+    <link rel="icon" href="../img/logo.png">
+</head>
+
+<body>
+   <!--Header/Nav-->
+   <nav>
+    <img class="logo" src="../img/logo.png">
+    <ul class="list1">
+        <li class="line"><a href="../index.html">HOME</a></li>
+        <li class="line">
+            <div class="dropdown">
+                <a href="#" class="dropbtn">CATEGORIAS</a>
+                <div class="dropdown-content">
+                    <a href="../games/jogo da velha.html">Jogo da Velha</a>
+                    <a href="../games/cobrinha.html">Cobrinha</a>
+                    <a href="../games/campas.html">Campo Minado</a>
+                </div>
+            </div>
+        </li>
+        <li class="line"><a href="../suporte.html">SUPORTE</a></li>
+        <li>│</li>
+        <li class="line"><a href="../perfil.html">PERFIL</a></li>
+    </ul>
+
+    <ul class="list2">
+
+        <li><a class="line"><a href="../login.html">LOGIN</a></li>
+    </ul>
+</nav>
+    <br><br>
+    <section class="game">
+      <input type="button" value="Mayck" onclick="mayck()">
+      <input type="button" value="Erick" onclick="Erick()">
+      <input type="button" value="Henrique" onclick="Henrique()">
+    </section><br>
+    <div class="game-card game" id="game-card">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <footer>
+      <img src="../img/Logo.png.png" alt="">
+      <p>Play Land @2023 | Todos os direitos reservados</p>
+      <br>
+      <a href="../suporte.html">Suporte</a>
+      <a href="../sobre.html">Sobre Nós</a>
+      <br>
+  </footer>
+  </body>
+  
+  <script>
+    function mayck() {
+      document.getElementById("game-card").innerHTML = "<iframe src='https://mayck-e.github.io/game1-jogo-da-velha/' frameborder='0' height='600' width='1200' id='full'></iframe>"
+
+    }
+    function Erick() {
+      document.getElementById("game-card").innerHTML = "<iframe src='https://erick-bfs.github.io/jogo_da_velha/' frameborder='0' height='600' width='1200' id='full'></iframe>"
+
+    }
+  
+    function Henrique() {
+      document.getElementById("game-card").innerHTML = "<iframe src='https://henriquebertellini.github.io/jogo_da_velha/' frameborder='0' height='600' width='1200' id='full'></iframe>"
+    }
+  
+  </script>
+</body>
+</html>
